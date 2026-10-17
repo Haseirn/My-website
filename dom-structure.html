@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Velaire — DOM Structure</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h2>Document Object Model (DOM) Structure — Velaire Website</h2>
+    <pre>
+html
+��─ head
+│  ├─ meta (charset)
+│  ├─ meta (viewport)
+│  ├─ title
+│  └─ link (css/style.css)
+└─ body
+   ├─ header
+   │  ├─ div.container.header-inner
+   │  │  ├─ h1.brand
+   │  │  └─ nav
+   │  │     └─ ul.nav
+   │  │        ├─ li > a (Home)
+   │  │        ├─ li > a (Products)
+   │  │        ├─ li > a (Trustees)
+   │  │        ├─ li > a (Events)
+   │  │        └─ li > a (Contact)
+   │  └─ div.marquee > div.marquee-inner#global-marquee
+   ├─ main.container
+   │  └─ (page-specific sections: hero, products, trustees, forms, events)
+   └─ footer
+      └─ div.container.footer-inner
+         └─ p (copyright)
+
+Each page shares the same header / nav / marquee / footer structure ensuring a consistent link structure across the site.
+    </pre>
+
+    <p>The DOM outline above applies to all pages (index.html, products.html, trustees.html, events.html, inquiries.html, about.html). Dynamic content is injected by /js/script.js.</p>
+  </main>
+</body>
+</html>

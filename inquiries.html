@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Velaire — Inquiries & Appointments</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <h1 class="brand">Velaire</h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/trustees.html">Board of Trustees</a></li>
+          <li><a href="/events.html">Events</a></li>
+          <li><a href="/inquiries.html">Inquiries & Appointments</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="marquee"><div class="marquee-inner" id="global-marquee"></div></div>
+  </header>
+
+  <main class="container">
+    <h2>Contact & Book an Appointment</h2>
+
+    <section class="contact">
+      <h3>General Inquiries</h3>
+      <form id="inquiry-form">
+        <label>Name <input name="name" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Message <textarea name="message" rows="4" required></textarea></label>
+        <button type="submit">Send Inquiry</button>
+      </form>
+      <div id="inquiry-result" class="result"></div>
+    </section>
+
+    <section class="appointment">
+      <h3>Book a Private Appointment</h3>
+      <form id="appointment-form">
+        <label>Full name <input name="fullname" required></label>
+        <label>Email <input name="email" type="email" required></label>
+        <label>Date & time <input name="datetime" type="datetime-local" required></label>
+        <label>Notes (optional) <textarea name="notes" rows="3"></textarea></label>
+        <button type="submit">Request Appointment</button>
+      </form>
+      <div id="appt-result" class="result"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Velaire Fashion House</p>
+    </div>
+  </footer>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
